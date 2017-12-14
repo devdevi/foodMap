@@ -47,24 +47,20 @@
         <div class="row">
           <div class="col s12">
               <label>Restaurantes cercanos</label>
-                  <select class=""  >
-                     <option value="0">Seleccionar...</option>
-                    <option value="1">China</option>
-                    <option value="2">Comida Rapida</option>
-                    <option value="3">Ver todos</option>
-                  </select>
+                   <select id="categorias">
+                   <!-- El numero del value pues aqui lo usamos en seleccion del JQuery-->
+
+                      <option value="0">Seleccionar...</option>
+                      <option value="1">Oriental</option>
+                      <option value="2">Europea</option>
+                      <option value="3">Chilena</option>
+                      <option value="4">Peruana</option>
+                      <option value="5">Todas</option>
+
+                    </select>
           </div>
         </div>
       </div>
-
-      <select id="categorias">
-  <option value="0">Seleccionar...</option>
-  <option value="china">China</option>
-  <option value="venezolana">Venezolana</option>
-  <option value="arabe">Árabe</option>
-  <option value="peruana">Peruana</option>
-</select>
-
 
 <!--TABLA CON LA INFORMACION DE LOS RESTAURANTES-->
       <section id="tableRest hide">
@@ -95,7 +91,7 @@
                    <tr>
                     <td>assets/images/rest2.jpg</td>
                     <td>Voy y Vuelvo</td>
-                    <td>Comida Casera</td>
+                    <td>Europea</td>
                      <td>7000</td>
                     <td>Lunes a viernes</td>
                     <td>3.5</td>
@@ -103,7 +99,7 @@
                    <tr>
                     <td>assets/images/rest3.jpg</td>
                     <td>Casaluz</td>
-                    <td>Española,italiana,Para Picar</td>
+                    <td>Chilena</td>
                     <td>7000</td>
                     <td>Todos los dias</td>
                     <td>4.3</td>
@@ -111,19 +107,76 @@
                    <tr>
                     <td>assets/images/rest4.jpg</td>
                     <td>P.F. Chang's</td>
-                    <td>China,Asiatica</td>
+                    <td>Peruana</td>
                      <td>7000</td>
                     <td>Todos los dias</td>
                     <td>4.1</td>
                   </tr>
-                   <tr>
+                  <tr>
                     <td>assets/images/rest5.jpg</td>
-                    <td>Casa de Cena</td>
-                    <td>Comida Casera</td>
+                    <td>Jose Ramon</td>
+                    <td>china</td>
                      <td>7000</td>
-                    <td>Lunes a virnes</td>
-                    <td>4.0</td>
+                    <td>Todos los dias</td>
+                    <td>4.3</td>
                   </tr>
+                   <tr>
+                    <td>assets/images/rest6.jpg</td>
+                    <td>Voy y Vuelvo 2</td>
+                    <td>Europea</td>
+                     <td>7000</td>
+                    <td>Lunes a viernes</td>
+                    <td>3.5</td>
+                  </tr>
+                   <tr>
+                    <td>assets/images/rest7.jpg</td>
+                    <td>Casaluz2</td>
+                    <td>Chilena</td>
+                    <td>7000</td>
+                    <td>Todos los dias</td>
+                    <td>4.3</td>
+                  </tr>
+                   <tr>
+                    <td>assets/images/rest8.jpg</td>
+                    <td>P.F. Chang's2</td>
+                    <td>Peruana</td>
+                     <td>7000</td>
+                    <td>Todos los dias</td>
+                    <td>4.1</td>
+                  </tr>
+                  <tr>
+                    <td>assets/images/rest9.jpg</td>
+                    <td>Jose Ramon2</td>
+                    <td>china</td>
+                     <td>7000</td>
+                    <td>Todos los dias</td>
+                    <td>4.3</td>
+                  </tr>
+                   <tr>
+                    <td>assets/images/rest10.jpg</td>
+                    <td>Voy y Vuelvo3</td>
+                    <td>Europea</td>
+                     <td>7000</td>
+                    <td>Lunes a viernes</td>
+                    <td>3.5</td>
+                  </tr>
+                   <tr>
+                    <td>assets/images/rest11.jpg</td>
+                    <td>Casaluz3</td>
+                    <td>Chilena</td>
+                    <td>7000</td>
+                    <td>Todos los dias</td>
+                    <td>4.3</td>
+                  </tr>
+                   <tr>
+                    <td>assets/images/rest12.jpg</td>
+                    <td>P.F. Chang's3</td>
+                    <td>Peruana</td>
+                     <td>7000</td>
+                    <td>Todos los dias</td>
+                    <td>4.1</td>
+                  </tr>
+                   
                    
                 </tbody>
               </table>
@@ -132,10 +185,44 @@
         </div>
       </section>
 
-      <div class="divider"></div>
+ 
 
       <div class="section">
-        <div class="row " id='restaurantHere'>
+        
+        <div class="row " id='restaurantOriental'>
+          <div id='sectionOriental' class="col s12 hide">
+            <h4 class="amber-text"><em>Comida Oriental</em></h4>
+            <div class="divider"></div>
+            <br>  
+          </div> 
+        </div>
+        <div class="row " id='restaurantEropea'>
+          <div id='sectionEuropea' class="col s12 hide">
+            <h4 class="amber-text"><em>Comida Europea</em></h4>
+            <div class="divider"></div>
+            <br>  
+          </div> 
+        </div>
+        <div class="row " id='restaurantPeru'>
+          <div id='sectionPeru' class="col s12 hide">
+            <h4 class="amber-text"><em>Comida Peruana</em></h4>
+            <div class="divider"></div>
+            <br>  
+          </div> 
+        </div>
+        <div class="row " id='restaurantChile'>
+          <div id='sectionChile' class="col s12 hide">
+            <h4 class="amber-text"><em>Comida Chilena</em></h4>
+            <div class="divider"></div>
+            <br>  
+          </div> 
+        </div>
+
+        <div class="row " id='restaurantHere' class="sailor-overlay"> </div>
+            
+      </div>
+
+
 
         <!--<div class="col s4 center">
          <img src="assets/images/rest1.jpg" alt="" class="waves-effect waves-light  modal-trigger" href="#modal1">
