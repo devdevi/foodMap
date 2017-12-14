@@ -141,12 +141,13 @@
           $( '#restaurantChile').hide();
           $( '#restaurantEropea').show();
           $( '#restaurantPeru').hide();
+          $('.modal').modal();
       };
 
 
       //COMIDA CHILENA
        if( selection === "3" && cookType ==='Chilena') {
-           $('.modal').modal();
+          $('.modal').modal();
         //que aparesca el titulo
         $('#sectionChile').removeClass("hide");
       restaurantChile.append( 
@@ -182,11 +183,12 @@
           $( '#restaurantChile').show();
           $( '#restaurantEropea').hide();
           $( '#restaurantPeru').hide();
+          $('.modal').modal();
       };
 
       //COMIDA Peruana
        if( selection === "4" && cookType ==='Peruana') {
-           $('.modal').modal();
+          $('.modal').modal();
         //que aparesca el titulo
         $('#sectionPeru').removeClass("hide");
       restaurantPeru.append( 
@@ -222,6 +224,7 @@
           $( '#restaurantChile').hide();
           $( '#restaurantEropea').hide();
           $( '#restaurantPeru').show();
+          $('.modal').modal();
       };
 
 
@@ -233,6 +236,7 @@
           $( '#restaurantEropea').hide();
           $( '#restaurantPeru').hide();
         allrestaurants();
+        $('.modal').modal();
       }
 
 
@@ -366,13 +370,14 @@ function allrestaurants(){
 
   function mouseH(){
     $('.hola').mouseover(function () {
-     $(this).parent(alert('aqui va el Hover')).append(
+     $(this).fadeIn(1000,"swing");
+      //parent(alert('aqui va el Hover')).append(
 
         '<div class="col s4 center hola">' +
         ' <img src="'+ photo + '" alt="" class="waves-effect waves-light  modal-trigger" href="#modal1">' +
          '<h5 class="amber-text"> hover' + nameRest +'</h5>' +
          '</div>' 
-      );
+      
   });
 
    /* $('.contenedor').mouseover(function () {
