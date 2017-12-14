@@ -68,13 +68,13 @@
         $('#sectionOriental').removeClass("hide");
       restaurantOriental.append( 
         '<div class="col s4 center">' +
-        ' <img src="'+ photo + '" alt="" class="waves-effect waves-light  modal-trigger" href="#modal1">' +
+        ' <img src="'+ photo + '" alt="" class="waves-effect waves-light  modal-trigger" href="#modal'+ [i] + '">' +
          '<h5 class="amber-text"> ' + nameRest +'</h5>' +
          '</div>' +
 
          //arreglar el Modal
          
-        ' <div id="modal1" class="modal ">' +
+        ' <div id="modal' + [i] + '" class="modal ">' +
            ' <div class="modal-content ">' +
              ' <div class="row">' +
                ' <h5 class="amber-text"><strong>' + nameRest +'</strong></h5>' +
@@ -111,11 +111,13 @@
         $('#sectionEuropea').removeClass("hide");
       restaurantEropea.append( 
         '<div class="col s4 center">' +
-        ' <img src="'+ photo + '" alt="" class="waves-effect waves-light  modal-trigger" href="#modal1">' +
+        ' <img src="'+ photo + '" alt="" class="waves-effect waves-light  modal-trigger" href="#modal'+ [i] + '">' +
          '<h5 class="amber-text"> ' + nameRest +'</h5>' +
          '</div>' +
+
          //arreglar el Modal
-        ' <div id="modal1" class="modal ">' +
+         
+        ' <div id="modal' + [i] + '" class="modal ">' +
            ' <div class="modal-content ">' +
              ' <div class="row">' +
                ' <h5 class="amber-text"><strong>' + nameRest +'</strong></h5>' +
@@ -152,11 +154,13 @@
         $('#sectionChile').removeClass("hide");
       restaurantChile.append( 
         '<div class="col s4 center">' +
-        ' <img src="'+ photo + '" alt="" class="waves-effect waves-light  modal-trigger" href="#modal1">' +
+        ' <img src="'+ photo + '" alt="" class="waves-effect waves-light  modal-trigger" href="#modal'+ [i] + '">' +
          '<h5 class="amber-text"> ' + nameRest +'</h5>' +
          '</div>' +
+
          //arreglar el Modal
-        ' <div id="modal1" class="modal ">' +
+         
+        ' <div id="modal' + [i] + '" class="modal ">' +
            ' <div class="modal-content ">' +
              ' <div class="row">' +
                ' <h5 class="amber-text"><strong>' + nameRest +'</strong></h5>' +
@@ -193,11 +197,13 @@
         $('#sectionPeru').removeClass("hide");
       restaurantPeru.append( 
         '<div class="col s4 center">' +
-        ' <img src="'+ photo + '" alt="" class="waves-effect waves-light  modal-trigger" href="#modal1">' +
+        ' <img src="'+ photo + '" alt="" class="waves-effect waves-light  modal-trigger" href="#modal'+ [i] + '">' +
          '<h5 class="amber-text"> ' + nameRest +'</h5>' +
          '</div>' +
+
          //arreglar el Modal
-        ' <div id="modal1" class="modal ">' +
+         
+        ' <div id="modal' + [i] + '" class="modal ">' +
            ' <div class="modal-content ">' +
              ' <div class="row">' +
                ' <h5 class="amber-text"><strong>' + nameRest +'</strong></h5>' +
@@ -335,14 +341,14 @@ function allrestaurants(){
        console.log('funciona');
       restaurantHere.append(
 
-        '<div class="col s4 center hola">' +
-        ' <img src="'+ photo + '" alt="" class="waves-effect waves-light  modal-trigger" href="#modal1">' +
+        '<div class="col s4 center">' +
+        ' <img src="'+ photo + '" alt="" class="waves-effect waves-light  modal-trigger" href="#modal'+ [i] + '">' +
          '<h5 class="amber-text"> ' + nameRest +'</h5>' +
          '</div>' +
 
          //arreglar el Modal
          
-        ' <div id="modal1" class="modal ">' +
+        ' <div id="modal' + [i] + '" class="modal ">' +
            ' <div class="modal-content ">' +
              ' <div class="row">' +
                ' <h5 class="amber-text"><strong>' + nameRest +'</strong></h5>' +
