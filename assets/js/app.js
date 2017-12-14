@@ -1,3 +1,8 @@
+$(function(){
+  setTimeout(function() {
+     $('#splash').fadeOut(700);
+  }, 3500);
+});
 
   $(document).ready(function(){
 
