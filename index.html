@@ -47,15 +47,23 @@
         <div class="row">
           <div class="col s12">
               <label>Restaurantes cercanos</label>
-                  <select class="browser-default">
-                    <option id="send"  disabled selected>Elige tu mejor opción</option>
-                    <option value="1">Comida Española</option>
+                  <select class=""  >
+                     <option value="0">Seleccionar...</option>
+                    <option value="1">China</option>
                     <option value="2">Comida Rapida</option>
                     <option value="3">Ver todos</option>
                   </select>
           </div>
         </div>
       </div>
+
+      <select id="categorias">
+  <option value="0">Seleccionar...</option>
+  <option value="china">China</option>
+  <option value="venezolana">Venezolana</option>
+  <option value="arabe">Árabe</option>
+  <option value="peruana">Peruana</option>
+</select>
 
 
 <!--TABLA CON LA INFORMACION DE LOS RESTAURANTES-->
@@ -79,7 +87,7 @@
                   <tr>
                     <td>assets/images/rest1.jpg</td>
                     <td>Jose Ramon</td>
-                    <td>Sandwich</td>
+                    <td>china</td>
                      <td>7000</td>
                     <td>Todos los dias</td>
                     <td>4.3</td>
@@ -128,9 +136,35 @@
 
       <div class="section">
         <div class="row " id='restaurantHere'>
-        
+
+        <!--<div class="col s4 center">
+         <img src="assets/images/rest1.jpg" alt="" class="waves-effect waves-light  modal-trigger" href="#modal1">
+         <h5 class="amber-text"> PROBANDO</h5>
+         </div>
+
+         <div id="modal1" class="modal ">
+            <div class="modal-content ">
+              <div class="row">
+                <h5 class='amber-text'><strong>NOMBRE RESTAURNTE</strong></h5>
+                <div class="col s6">
+                   <img src="assets/images/rest5.jpg" alt=""> 
+                </div>
+                <div class="col s6">
+                  <p>Tipo de comida:</p>
+                  <p>Precio: $</p>
+                  <p>Horario:</p>
+                  <p>Puntuacion:
+                      <a class="waves-effect waves-light btn amber white-text ">4.5</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat amber-text">IR A RESTAURANTE</a>
+            </div>
+          </div>
         </div>
-      </div>
+      </div> -->
           
 
 

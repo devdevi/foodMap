@@ -72,13 +72,91 @@
 
        console.log('funciona');
       restaurantHere.append(
+
+        '<div class="col s4 center">' +
+        ' <img src="'+ photo + '" alt="" class="waves-effect waves-light  modal-trigger" href="#modal1">' +
+         '<h5 class="amber-text"> ' + nameRest +'</h5>' +
+         '</div>' +
+
+         //arreglar el Modal
+         
+        ' <div id="modal1" class="modal ">' +
+           ' <div class="modal-content ">' +
+             ' <div class="row">' +
+               ' <h5 class="amber-text"><strong>' + nameRest +'</strong></h5>' +
+                '<div class="col s6">'+
+                   '<img src="' + photo + '" alt=""> '+
+                '</div>' +
+               ' <div class="col s6">' +
+                 ' <p>Tipo de comida:&nbsp' + cookType +'</p>' +
+                  '<p>Precio:&nbsp$' + price + '</p>' +
+                  '<p>Horario:&nbsp'+ horario +'</p>' +
+                  '<p>Puntuacion:&nbsp<a class="waves-effect waves-light btn amber white-text ">' + puntuacion + '</a></p>' +
+               ' </div>' +
+             ' </div>' +
+           ' </div>' +
+           ' <div class="modal-footer">' +
+             ' <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat amber-text">IR A RESTAURANTE</a>' +
+           ' </div>' +
+          '</div>'
+          ); 
+
+          
+    
+    $('#categorias').on('change', function() {
+      var selection = $('#categorias').val();
+      //cont.text(selection);
+      if( selection === "china") {
+      restaurantHere.append( '<div class="col s4 center">' +
+        ' <img src="'+ photo + '" alt="" class="waves-effect waves-light  modal-trigger" href="#modal1">' +
+         '<h5 class="amber-text"> ' + nameRest +'</h5>' +
+         '</div>' +
+
+         //arreglar el Modal
+         
+        ' <div id="modal1" class="modal ">' +
+           ' <div class="modal-content ">' +
+             ' <div class="row">' +
+               ' <h5 class="amber-text"><strong>' + nameRest +'</strong></h5>' +
+                '<div class="col s6">'+
+                   '<img src="' + photo + '" alt=""> '+
+                '</div>' +
+               ' <div class="col s6">' +
+                 ' <p>Tipo de comida:&nbsp' + cookType +'</p>' +
+                  '<p>Precio:&nbsp$' + price + '</p>' +
+                  '<p>Horario:&nbsp'+ horario +'</p>' +
+                  '<p>Puntuacion:&nbsp<a class="waves-effect waves-light btn amber white-text ">' + puntuacion + '</a></p>' +
+               ' </div>' +
+             ' </div>' +
+           ' </div>' +
+           ' <div class="modal-footer">' +
+             ' <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat amber-text">IR A RESTAURANTE</a>' +
+           ' </div>' +
+          '</div>');
+      }
+      if( selection === "venezolana") {
+      restaurantHere.html('<p>Hola esto es un append Venezolano</p> <img src="http://www.moonkitty.net/avatars/sailor-moon-manga-avatar-001.jpg"/> <img src="http://www.moonkitty.net/avatars/sailor-moon-manga-avatar-001.jpg"/>');
+      }
+      if( selection === "arabe") {
+      restaurantHere.html('<p>Hola esto es un append Árabe</p> <img src="http://images6.fanpop.com/image/photos/34800000/Sailor-Moon-icon-sailor-moon-34857518-100-100.gif"/><img src="http://images6.fanpop.com/image/photos/34800000/Sailor-Moon-icon-sailor-moon-34857518-100-100.gif"/>');
+      }
+      if( selection === "peruana") {
+      restaurantHere.html('<p>Hola esto es un append Peruano</p> <img src="https://v.dreamwidth.org/303319/106183"/><img src="https://v.dreamwidth.org/303319/106183"/>');
+      }
+});
+
+      //ESTO FUNCIONA 
+      /*
+      console.log('funciona');
+      restaurantHere.append(
+        
         ' <div class="col s4 center">' +
            ' <img src="'+ photo +'" alt="">' +
               '<h5 class= "amber-text"> ' + nameRest +'</h5>' +
 
            ' </div>'
 
-              );
+          );*/
 
      };
 
